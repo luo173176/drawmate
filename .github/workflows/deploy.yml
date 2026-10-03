@@ -36,6 +36,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # 首次运行自动开通 Pages，无需手动到仓库设置里选择 Source
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
